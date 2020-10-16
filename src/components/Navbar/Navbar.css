@@ -1,0 +1,16 @@
+.main-title-font{
+    font-family: 'Playfair Display SC', serif;
+}
+  
+.main-menu{
+    font-family: 'Lora', serif;
+    color: rgb(0, 0, 0) !important;
+}
+
+.main-menu:hover, .main-menu:active, .main-menu:focus{
+    font-weight: bold
+}
+
+.nav-color{
+    background-color: rgb(240, 240, 240, 0.8);
+}
