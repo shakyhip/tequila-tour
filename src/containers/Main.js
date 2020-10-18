@@ -1,11 +1,12 @@
 import React from 'react'
+import Carrusel from '../components/Carrusel/Carrusel'
+import Header from '../components/Header'
 
 const Main = () => {
     return (
         <div>
-            <main className="background bg-main">
-
-            </main>
+            <Header bgImage="bg-main" />
+            <Carrusel />
         </div>
     )
 }

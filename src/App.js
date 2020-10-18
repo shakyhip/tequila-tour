@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import Main from './containers/Main';
 import Foodie from './containers/Foodie';
 import Hospedaje from './containers/Hospedaje';
+import Fabricas from './containers/Fabricas';
+import Actividades from './containers/Actividades';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Switch>
         <Route exact path="/foodie" component={Foodie}/>
         <Route exact path="/hospedaje" component={Hospedaje} />
+        <Route exact path="/actividades" component={Actividades} />
+        <Route exact path="/fabricas" component={Fabricas} />
         <Route exact path="/" component={Main} />
       </Switch>
     </BrowserRouter>

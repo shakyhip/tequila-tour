@@ -1,8 +1,8 @@
 import React from 'react'
 import './Navbar.css'
-import { Link, NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUtensils, faHotel, faCircle } from '@fortawesome/free-solid-svg-icons';
+import NavLiga from '../NavLiga/NavLiga';
+import { Link } from 'react-router-dom';
+import { faUtensils, faHotel, faIndustry, faClipboardList } from '@fortawesome/free-solid-svg-icons';
 
 import icon from '../../assets/img/tequila.png';
 
@@ -21,24 +21,10 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <NavLink className="nav-item nav-link main-menu" to='/foodie'>
-                            <span className="fa-stack fa-stack-menu">
-                                <FontAwesomeIcon icon={faCircle} className="fa-stack-2x stack-fix" />
-                                <FontAwesomeIcon icon={faUtensils} className="fa-stack-1x stack-fix" />
-                            </span>
-                            Foodie
-                        </NavLink>
-                    </li>
-                    <li class="nav-item">
-                        <NavLink className="nav-item nav-link main-menu" to='/hospedaje'>
-                            <span className="fa-stack fa-stack-menu">
-                                <FontAwesomeIcon icon={faCircle} className="fa-stack-2x stack-fix" />
-                                <FontAwesomeIcon icon={faHotel} className="fa-stack-1x stack-fix" />
-                            </span>
-                            Hospedaje
-                        </NavLink>
-                    </li>
+                    <NavLiga titulo="Foodie" toLink="/foodie" icon={faUtensils} />
+                    <NavLiga titulo="Hospedaje" toLink="/hospedaje" icon={faHotel} />
+                    <NavLiga titulo="Fabricas" toLink="/fabricas" icon={faIndustry} />
+                    <NavLiga titulo="Actividades" toLink="/actividades" icon={faClipboardList} />
                 </ul>
             </div>
         </nav>

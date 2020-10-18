@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
 
-const Hospedaje = () => {
+const Actividades = () => {
     return (
         <div>
-            <Header bgImage="bg-hosp" />
+            <Header bgImage="bg-acti"/>
         </div>
     )
 }
 
-export default Hospedaje
+export default Actividades

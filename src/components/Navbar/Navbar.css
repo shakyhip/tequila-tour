@@ -14,25 +14,3 @@
 .main-menu:hover, .main-menu.active {
     text-shadow: 0 0 0.02px black;
 }
-
-span.fa-stack-menu {
-    height: 0.7rem;
-    width: 2.25rem;
-}
-
-.fa-stack-2x.stack-fix {
-    height: 1.7rem !important;
-    color: transparent !important;
-}
-
-.fa-stack-1x.stack-fix {
-    margin-left: 0.6rem !important;
-}
-
-.nav-link.main-menu.active .fa-stack-2x.stack-fix, li.nav-item:hover .fa-stack-2x.stack-fix {
-    color: rgb(75, 75, 75) !important;
-}
-
-.nav-link.main-menu.active .fa-stack-1x.stack-fix, li.nav-item:hover .fa-stack-1x.stack-fix {
-    color: white !important;
-}
