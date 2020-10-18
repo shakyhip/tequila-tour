@@ -1,16 +1,38 @@
-.main-title-font{
+.nav-color {
+    background-color: rgb(240, 240, 240, 0.8);
+}
+
+.main-title-font {
     font-family: 'Playfair Display SC', serif;
 }
-  
-.main-menu{
+
+.main-menu {
     font-family: 'Lora', serif;
-    color: rgb(0, 0, 0) !important;
+    color: rgb(75, 75, 75) !important;
 }
 
-.main-menu:hover, .main-menu:active, .main-menu:focus{
-    font-weight: bold
+.main-menu:hover, .main-menu.active {
+    text-shadow: 0 0 0.02px black;
 }
 
-.nav-color{
-    background-color: rgb(240, 240, 240, 0.8);
+span.fa-stack-menu {
+    height: 0.7rem;
+    width: 2.25rem;
+}
+
+.fa-stack-2x.stack-fix {
+    height: 1.7rem !important;
+    color: transparent !important;
+}
+
+.fa-stack-1x.stack-fix {
+    margin-left: 0.6rem !important;
+}
+
+.nav-link.main-menu.active .fa-stack-2x.stack-fix, li.nav-item:hover .fa-stack-2x.stack-fix {
+    color: rgb(75, 75, 75) !important;
+}
+
+.nav-link.main-menu.active .fa-stack-1x.stack-fix, li.nav-item:hover .fa-stack-1x.stack-fix {
+    color: white !important;
 }
